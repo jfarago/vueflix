@@ -25,5 +25,11 @@ npm run test:unit
 npm run lint
 ```
 
+### Get api key from TMDB
+Add env.local in root of folder with your api key
+```
+VUE_APP_TMDB_API_KEY=XXXXX
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
