@@ -35,7 +35,7 @@ h1 {
 
 a {
   margin-left: 24px;
-  line-height: 55px;
+  line-height: 60px;
   font-weight: bold;
   color: lightgray;
   text-decoration: none;

@@ -17,7 +17,7 @@ export default {
 <style lang="scss">
 body {
   background: black;
-    font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
