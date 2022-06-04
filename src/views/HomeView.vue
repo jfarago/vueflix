@@ -24,8 +24,12 @@ export default {
     };
   },
   async created() {
-    this.media = await getPopularMedia();
-    console.log(this.media);
+    this.media = await getPopularMedia(this.$route.params.mediaType);
+  },
+  watch: {
+    async $route(to) {
+      this.media = await getPopularMedia(to.params.mediaType);
+    }
   }
 };
 </script>

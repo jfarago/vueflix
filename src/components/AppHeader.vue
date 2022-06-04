@@ -2,8 +2,9 @@
   <div class="header">
     <h1>Vueflix</h1>
     <nav>
-      <router-link to="/home">Home</router-link>
-      <router-link to="/popular">Popular</router-link>
+      <router-link to="/all">All</router-link>
+      <router-link to="/movies">Movies</router-link>
+      <router-link to="/tv">TV</router-link>
     </nav>
   </div>
 </template>
@@ -13,11 +14,6 @@ export default {
   name: 'AppHeader',
   props: {
     msg: String,
-  },
-  data() {
-    return {
-      test: 1
-    };
   }
 };
 </script>
@@ -37,7 +33,7 @@ a {
   margin-left: 24px;
   line-height: 60px;
   font-weight: bold;
-  color: lightgray;
+  color: darkgray;
   text-decoration: none;
 
   &.router-link-exact-active {
