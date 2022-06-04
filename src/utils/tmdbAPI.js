@@ -4,7 +4,6 @@ const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 const TMDB_IMAGE_URL = 'https://image.tmdb.org/t/p/original';
 
 export async function getPopularMedia() {
-  console.log(process.env);
   let response = [];
   try {
     const media = await AXIOS.get(`${TMDB_BASE_URL}/trending/all/day?api_key=${process.env.VUE_APP_TMDB_API_KEY}`);
